@@ -1,0 +1,238 @@
+.container,.face,.hair,.nose,.ear,.neck,.body,.cape,.logo,
+.group,.fringe, .eye,.profile-card, .yes,.no, .info,
+.tongue, .profile-wrap, .name, .mouth, .eyebrow, .blush {
+    position: absolute;
+}
+
+body {
+    background: #ffd31d;
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    overflow: hidden;
+    background: #40bad5;
+}
+
+.group {
+    left: -7px;
+}
+
+.face {
+    border-radius: 100%;
+    z-index: 20;
+    top: 50px;
+    left: 70px;
+    width: 80px;
+    height: 100px;
+    background: #F0BEAF;
+}
+
+.hair {
+    z-index: 3;
+    top: 30px;
+    left: 50px;
+    width: 120px;
+    height: 200px;
+    border-radius: 100px 100px 0 0;
+    background: #424B54;
+}
+.fringe:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -24px;
+    width: 57px;
+    height: 50px;
+    background: #424B54;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    transform: rotate(10deg);
+}
+
+.ear {
+    z-index: 4;
+    top: 86px;
+    left: 61px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #F0BEAF;
+    display: none;
+
+}
+
+.ear.right {
+    left: 130px;
+}
+
+.fringe {
+    z-index: 99;
+    top: 53px;
+    left: 95px;
+    width: 69px;
+    height: 35px;
+    background: #424B54;
+    border-radius: 0 0 100px 100px;
+    transform: rotate(30deg);
+}
+.blush:before {
+    position: absolute;
+    content: '';
+    left: 58px;
+    width: 10px;
+    height: 7px;
+    background: #E3879E;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+.eyebrow {
+    z-index: 300;
+    top: 95px;
+    left: 78px;
+    width: 12px;
+    height: 2px;
+    background: #646B73;
+    border-radius: 3px;
+&:before {
+     position: absolute;
+     content: '';
+     left: 50px;
+     width: 12px;
+     height: 2px;
+     background: #646B73;
+     border-radius: 3px;
+ }
+}
+
+.eye:before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    background: #424B54;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+.eye {
+    z-index: 30;
+    top: 100px;
+    left: 80px;
+    width: 10px;
+    height: 10px;
+    background: #424B54;
+    border-radius: 100%;
+&:before {
+     position: absolute;
+     content: '';
+     left: 50px;
+     width: 10px;
+     height: 10px;
+     background: #424B54;
+     border-radius: 100%;
+ }
+}
+
+.eyebrow:before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    width: 12px;
+    height: 2px;
+    background: #646B73;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.blush {
+    z-index: 999;
+    top: 116px;
+    left: 77px;
+    width: 10px;
+    height: 7px;
+    background: #E3879E;
+    border-radius: 100%;
+    opacity: 0.4;
+&:before{
+     position: absolute;
+     content: '';
+     left: 58px;
+     width: 10px;
+     height: 7px;
+     background: #E3879E;
+     border-radius: 100%;
+
+ }
+}
+
+.nose {
+    z-index: 20;
+    top: 100px;
+    left: 107px;
+    width: 8px;
+    height: 14px;
+    background: #DB9B99;
+    border-radius: 100%;
+}
+
+.mouth {
+    z-index: 20;
+    top: 120px;
+    left: 97px;
+    width: 30px;
+    height: 15px;
+    border-radius: 0 0 100px 100px;
+    background: #424B54;
+    overflow: hidden;
+}
+
+.tongue {
+    top: 5px;
+    left: 8px;
+    width: 30px;
+    height: 20px;
+    background:#F6828C;
+    border-radius: 100%;
+}
+
+.neck {
+    z-index: 13;
+    width: 30px;
+    height: 30px;
+    background: #F0BEAF;
+    top: 130px;
+    left: 97px;
+    border-radius: 35%;
+}
+
+.body {
+    z-index: 10;
+    top: 150px;
+    left: 60px;
+    width: 100px;
+    height: 150px;
+    background: #fc7e2f;
+    border-radius: 100%;
+}
